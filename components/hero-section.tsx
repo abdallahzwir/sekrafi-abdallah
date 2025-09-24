@@ -1,36 +1,39 @@
-"use client"
+"use client";
 
-import { useEffect, useState } from "react"
-import { Button } from "@/components/ui/button"
-import { ArrowDown, Github, Linkedin, Facebook, ArrowDownToLine } from "lucide-react"
-import Image from "next/image"
-import { motion } from "framer-motion"
+import { useEffect, useState } from "react";
+import { Button } from "@/components/ui/button";
+import {
+  ArrowDown,
+  Github,
+  Linkedin,
+  Facebook,
+  ArrowDownToLine,
+} from "lucide-react";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
 const HeroSection = () => {
-  const [mounted, setMounted] = useState(false)
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true)
-  }, [])
+    setMounted(true);
+  }, []);
 
   const scrollToSection = (href: string) => {
-    const element = document.querySelector(href)
+    const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
+      element.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
 
-  if (!mounted) return null
+  if (!mounted) return null;
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
-      {/* Background Elements */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-orange-500/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-green-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-      </div>
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <section
+      id="home"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20"
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8 animate-fade-in-left">
@@ -41,7 +44,9 @@ const HeroSection = () => {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="greeting-box inline-block px-4 py-2"
               >
-                <span className="text-foreground font-medium">Hello There!</span>
+                <span className="text-foreground font-medium">
+                  Hello There!
+                </span>
               </motion.div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
@@ -49,14 +54,21 @@ const HeroSection = () => {
               </h1>
 
               <div className="space-y-2">
-                <h2 className="text-xl sm:text-2xl text-gray-800 font-bold leading-tight">Full Stack Developer &</h2>
-                <h2 className="text-xl sm:text-2xl text-gray-800 font-bold leading-tight">Business Analyst</h2>
-                <h3 className="text-lg sm:text-xl text-gray-600">Based in Tunisia.</h3>
+                <h2 className="text-xl sm:text-2xl text-gray-800 font-bold leading-tight">
+                  Full Stack Developer &
+                </h2>
+                <h2 className="text-xl sm:text-2xl text-gray-800 font-bold leading-tight">
+                  Business Analyst
+                </h2>
+                <h3 className="text-lg sm:text-xl text-gray-600">
+                  Based in Tunisia.
+                </h3>
               </div>
 
               <p className="text-lg text-gray-600 max-w-2xl leading-relaxed">
-                With 5+ years experience in software development and 17+ years in IT including business analysis, I
-                collaborate with companies and clients to create exceptional digital experiences.
+                With 5+ years experience in software development and 17+ years
+                in IT including business analysis, I collaborate with companies
+                and clients to create exceptional digital experiences.
               </p>
             </div>
 
@@ -66,7 +78,7 @@ const HeroSection = () => {
                 onClick={() =>
                   window.open(
                     "https://drive.google.com/file/d/1PO32yskQJOFkEfebrmqH0hDMKdpzrfDZ/view?usp=sharing",
-                    "_blank",
+                    "_blank"
                   )
                 }
                 size="lg"
@@ -92,24 +104,33 @@ const HeroSection = () => {
               <Button
                 variant="ghost"
                 size="icon"
-                className="hover:bg-orange-500 rounded-full"
-                onClick={() => window.open("https://github.com/abdallahsekrafi", "_blank")}
+                className="hover:bg-orange-500 rounded-full border-2 border-orange-500 border-dashed"
+                onClick={() =>
+                  window.open("https://github.com/abdallahsekrafi", "_blank")
+                }
               >
                 <Github className="w-5 h-5" />
               </Button>
               <Button
                 variant="ghost"
                 size="icon"
-                className="hover:bg-orange-500 rounded-full"
-                onClick={() => window.open("https://linkedin.com/in/abdallah-sekrafi-47232889", "_blank")}
+                className="hover:bg-orange-500 rounded-full border-2 border-orange-500 border-dashed"
+                onClick={() =>
+                  window.open(
+                    "https://linkedin.com/in/abdallah-sekrafi-47232889",
+                    "_blank"
+                  )
+                }
               >
                 <Linkedin className="w-5 h-5" />
               </Button>
               <Button
                 variant="ghost"
                 size="icon"
-                className="hover:bg-orange-500 rounded-full"
-                onClick={() => window.open("https://www.facebook.com/abdallah.sek", "_blank")}
+                className="hover:bg-orange-500 rounded-full border-2 border-orange-500 border-dashed"
+                onClick={() =>
+                  window.open("https://www.facebook.com/abdallah.sek", "_blank")
+                }
               >
                 <Facebook className="w-5 h-5" />
               </Button>
@@ -121,7 +142,7 @@ const HeroSection = () => {
             <div className="relative">
               {/* Photo Container */}
               <div className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden bg-gradient-to-br from-orange-100 to-green-100 border-4 border-orange-500/50">
-                <div className="w-full h-full rounded-full overflow-hidden border-2 border-white">
+                <div className="w-full h-full rounded-full ">
                   <Image
                     src="/images/abdallah-photo.jpg"
                     alt="Sekrafi Abdallah - Full Stack Developer"
@@ -132,19 +153,21 @@ const HeroSection = () => {
                   />
                 </div>
               </div>
+
               <motion.div
-              className="absolute bottom-6 right-6 bg-orange-500 text-white w-20 h-20 rounded-full flex items-center justify-center text-xs font-bold shadow-xl z-20 border-4 border-green-300"
-              style={{
-              boxShadow: "0 0 20px rgba(34, 197, 94, 0.2), 0 4px 15px rgba(0, 0, 0, 0.2)",
-              animation: "pulse-glow 2s ease-in-out infinite",
-              }}
+                className="absolute bottom-6 right-6 bg-green-500  text-white w-20 h-20 rounded-full flex items-center justify-center text-xs font-bold shadow-xl z-20 border-4  border-orange-500/50"
+                style={{
+                  boxShadow: "0 0 20px green-800",
+                  animation: "pulse-glow 2s ease-in-out infinite",
+                }}
               >
-              <span className="text-center leading-tight">
-              OPEN
-              <br />
-              TO WORK
-              </span>
+                <span className="text-center leading-tight">
+                  OPEN
+                  <br />
+                  TO WORK
+                </span>
               </motion.div>
+
               <motion.div
                 className="absolute top-8 -right-4 bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg z-10"
                 initial={{ opacity: 0, scale: 0, y: 20 }}
@@ -198,12 +221,12 @@ const HeroSection = () => {
             onClick={() => scrollToSection("#about")}
             className="rounded-full hover:bg-gray-100"
           >
-            <ArrowDown className="w-5 h-5" />
+            <ArrowDown className="w-5 h-5 cursor-pointer border-2 border-orange-500 border-dashed" />
           </Button>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default HeroSection
+export default HeroSection;
