@@ -3,7 +3,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Progress } from "@/components/ui/progress";
 import {
   Database,
   Palette,
@@ -27,14 +26,6 @@ const SkillsSection = () => {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          // Animate progress bars
-          setTimeout(() => {
-            const progressValues: { [key: string]: number } = {};
-            technicalSkills.forEach((skill) => {
-              progressValues[skill.name] = skill.level;
-            });
-            setAnimatedProgress(progressValues);
-          }, 500);
         }
       },
       { threshold: 0.1 }
@@ -156,17 +147,6 @@ const SkillsSection = () => {
     },
   ];
 
-  const technicalSkills = [
-    { name: "JavaScript/React", level: 95 },
-    { name: "Node.js/Express", level: 90 },
-    { name: "MongoDB/MySQL", level: 85 },
-    { name: "Java/Spring Boot", level: 80 },
-    { name: "Business Analysis", level: 95 },
-    { name: "Project Management", level: 90 },
-    { name: "UI/UX Design", level: 75 },
-    { name: "System Architecture", level: 85 },
-  ];
-
   return (
     <section ref={sectionRef} id="skills" className="py-5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -183,7 +163,11 @@ const SkillsSection = () => {
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               A comprehensive skill set spanning full-stack development,
               business analysis, and creative design, honed through years of
-              diverse project experience and continuous learning.
+              diverse project experience and
+              <span className="text-xl text-orange-500 font-bold">
+                {" "}
+                continuous learning.
+              </span>
             </p>
           </div>
 
@@ -213,8 +197,8 @@ const SkillsSection = () => {
                       {category.skills.map((skill, skillIndex) => (
                         <Badge
                           key={skillIndex}
-                          variant="secondary"
-                          className="text-xs hover:bg-secondary/80 transition-colors"
+                          variant="outline"
+                          className={`${category.color} text-xs border-orange-300 `}
                         >
                           {skill}
                         </Badge>
@@ -224,33 +208,6 @@ const SkillsSection = () => {
                 </CardContent>
               </Card>
             ))}
-          </div>
-
-          {/* Technical Proficiency */}
-          <div className="mt-16">
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-8 text-center">
-                  Technical Proficiency
-                </h3>
-                <div className="grid md:grid-cols-2 gap-8">
-                  {technicalSkills.map((skill, index) => (
-                    <div key={index} className="space-y-3">
-                      <div className="flex justify-between items-center">
-                        <span className="font-medium">{skill.name}</span>
-                        <span className="text-sm text-muted-foreground">
-                          {skill.level}%
-                        </span>
-                      </div>
-                      <Progress
-                        value={animatedProgress[skill.name] || 0}
-                        className="h-2"
-                      />
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </div>

@@ -16,16 +16,15 @@ export default function Home() {
         <AboutSection />
         <ExperienceSection />
         <SkillsSection />
-        <ProjectsSection />
+         {/* <ProjectsSection /> */}
         <ContactSection />
 
         {/* Footer */}
         <footer className="bg-primary text-primary-foreground py-8">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center space-y-4">
-              <div className="text-2xl font-bold gradient-text">SA</div>
-              <p className="text-sm opacity-80">© 2024 Sekrafi Abdallah. All rights reserved.</p>
-              <p className="text-xs opacity-60">Built with Next.js, TypeScript, and Tailwind CSS</p>
+              <div className="text-2xl font-bold text-orange-500">SA</div>
+              <p className="text-sm opacity-80">© 2025 Sekrafi Abdallah. All rights reserved.</p>
             </div>
           </div>
         </footer>

@@ -181,8 +181,9 @@ const ExperienceSection = () => {
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
               A comprehensive journey through technology, business analysis, and
-              international collaboration, spanning over 15 years of diverse
-              professional experiences.
+              international collaboration, spanning over{" "}
+              <span className="text-xl text-orange-500 font-bold">+17</span>{" "}
+              years of diverse professional experiences.
             </p>
           </div>
 
