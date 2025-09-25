@@ -66,9 +66,27 @@ const HeroSection = () => {
               </div>
 
               <p className="text-lg text-gray-600 max-w-2xl leading-relaxed">
-                With 5+ years experience in software development and 17+ years
-                in IT including business analysis, I collaborate with companies
-                and clients to create exceptional digital experiences.
+                With{" "}
+                      <span className="text-orange-500 font-bold">
+                        5+
+                      </span>{" "}years experience in{" "}
+                      <span className="text-orange-500 font-bold">
+                        software development
+                      </span>{" "}and{" "}
+                      <span className="text-orange-500 font-bold">
+                        17+
+                      </span>{" "}years
+                in{" "}
+                      <span className="text-orange-500 font-bold">
+                        IT
+                      </span>{" "}including{" "}
+                      <span className="text-orange-500 font-bold">
+                        business analysis
+                      </span>{" "}, I collaborate with companies
+                and clients to create exceptional{" "}
+                      <span className="text-orange-500 font-bold">
+                        digital experiences
+                      </span>{" "}.
               </p>
             </div>
 
