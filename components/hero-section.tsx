@@ -54,10 +54,10 @@ const HeroSection = () => {
               </h1>
 
               <div className="space-y-2">
-                <h2 className="text-xl sm:text-2xl text-gray-800 font-bold leading-tight">
+                <h2 className="text-xl sm:text-2xl  font-bold leading-tight">
                   Full Stack Developer &
                 </h2>
-                <h2 className="text-xl sm:text-2xl text-gray-800 font-bold leading-tight">
+                <h2 className="text-xl sm:text-2xl  font-bold leading-tight">
                   Business Analyst
                 </h2>
                 <h3 className="text-lg sm:text-xl text-gray-600">
