@@ -155,7 +155,7 @@ const HeroSection = () => {
               </div>
 
               <motion.div
-                className="absolute bottom-6 right-6 bg-green-500  text-white w-20 h-20 rounded-full flex items-center justify-center text-xs font-bold shadow-xl z-20 border-4  border-orange-500/50"
+                className="absolute bottom-6 right-6 bg-green-500  text-white w-20 h-20 rounded-full flex items-center justify-center text-xs font-bold shadow-xl z-20 "
                 style={{
                   boxShadow: "0 0 20px green-800",
                   animation: "pulse-glow 2s ease-in-out infinite",
@@ -219,9 +219,9 @@ const HeroSection = () => {
             variant="ghost"
             size="icon"
             onClick={() => scrollToSection("#about")}
-            className="rounded-full hover:bg-gray-100"
+            className="rounded-full cursor-pointer border-2 border-orange-500 border-dashed hover:bg-orange-500"
           >
-            <ArrowDown className="w-5 h-5 cursor-pointer border-2 border-orange-500 border-dashed" />
+            <ArrowDown className="w-5 h-5" />
           </Button>
         </div>
       </div>

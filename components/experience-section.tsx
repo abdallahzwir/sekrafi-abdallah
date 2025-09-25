@@ -231,7 +231,7 @@ const ExperienceSection = () => {
                                 Current
                               </Badge>
                             )}
-                            <div className="flex items-center text-sm text-gray-600">
+                            <div className="flex items-center text-sm rounded-full p-1 border-1 border-orange-500 text-orange-500">
                               <Calendar className="w-4 h-4 mr-1" />
                               {exp.period}
                             </div>
