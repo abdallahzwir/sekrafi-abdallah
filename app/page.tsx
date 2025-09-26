@@ -9,7 +9,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 
 export default function Home() {
   return (
-    <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
+    <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
       <main className="min-h-screen">
         <Navigation />
         <HeroSection />
