@@ -71,7 +71,7 @@ const AboutSection = () => {
         >
           <div className="text-center space-y-4">
             <h2 className="text-4xl font-bold text-orange-500">About Me</h2>
-            <p className="text-gray-600 max-w-3xl mx-auto">
+            <p className="text-foreground max-w-3xl mx-auto">
               Get to know more about my background, skills, and{" "}
               <span className="text-orange-500 font-medium">passion</span> for{" "}
               <span className="text-orange-500 font-medium">technology</span>
@@ -95,7 +95,7 @@ const AboutSection = () => {
                       <p className="text-sm text-gray-600">
                         Faculty of Sciences of Bizerte • 2001-2005
                       </p>
-                      <p className="text-xs text-gray-500 mt-1">
+                      <p className="text-xs font-semibold text-orange-500 mt-1">
                         Software Engineering and Programming
                       </p>
                     </div>
@@ -127,7 +127,7 @@ const AboutSection = () => {
                     </div>
                   </div>
 
-                  <div className="space-y-4 text-gray-600 leading-relaxed text-sm">
+                  <div className="space-y-4 text-foreground leading-relaxed text-sm">
                     <p>
                       I'm Abdallah Sekrafi, a passionate{" "}
                       <span className="text-orange-500 font-medium">
@@ -189,7 +189,7 @@ const AboutSection = () => {
                         <div className="text-2xl font-bold text-orange-500">
                           2007
                         </div>
-                        <div className="text-xs text-gray-500">
+                        <div className="text-xs text-foreground">
                           Started Working
                         </div>
                       </div>
@@ -197,7 +197,7 @@ const AboutSection = () => {
                         <div className="text-2xl font-bold text-orange-500">
                           2016
                         </div>
-                        <div className="text-xs text-gray-500">
+                        <div className="text-xs text-foreground">
                           Started Coding
                         </div>
                       </div>
@@ -205,7 +205,7 @@ const AboutSection = () => {
                         <div className="text-2xl font-bold text-orange-500">
                           Tunisia
                         </div>
-                        <div className="text-xs text-gray-500">Based In</div>
+                        <div className="text-xs text-foreground">Based In</div>
                       </div>
                     </div>
                   </div>

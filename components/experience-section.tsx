@@ -179,7 +179,7 @@ const ExperienceSection = () => {
             <h2 className="text-3xl sm:text-4xl font-bold text-orange-500">
               Professional Experience
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-foreground max-w-3xl mx-auto leading-relaxed">
               A comprehensive journey through technology, business analysis, and
               international collaboration, spanning over{" "}
               <span className="text-xl text-orange-500 font-bold">+17</span>{" "}
@@ -238,11 +238,11 @@ const ExperienceSection = () => {
                             </div>
                           </div>
 
-                          <h3 className="text-xl font-bold text-gray-800">
+                          <h3 className="text-xl font-bold text-foreground">
                             {exp.title}
                           </h3>
 
-                          <div className="flex items-center text-gray-600">
+                          <div className="flex items-center text-foreground">
                             <Building className="w-4 h-4 mr-2" />
                             <span className="font-medium">{exp.company}</span>
                             <MapPin className="w-4 h-4 ml-4 mr-1" />
@@ -251,20 +251,20 @@ const ExperienceSection = () => {
                         </div>
 
                         {/* Description */}
-                        <p className="text-gray-600 mb-4 leading-relaxed">
+                        <p className="text-foreground mb-4 leading-relaxed">
                           {exp.description}
                         </p>
 
                         {/* Achievements */}
                         <div className="space-y-3">
-                          <h4 className="font-semibold text-sm text-gray-800">
+                          <h4 className="font-semibold text-sm text-orange-500">
                             Key Achievements:
                           </h4>
                           <ul className="space-y-1">
                             {exp.achievements.map((achievement, i) => (
                               <li
                                 key={i}
-                                className="text-sm text-gray-600 flex items-start"
+                                className="text-sm text-foreground flex items-start"
                               >
                                 <span className="w-1.5 h-1.5 bg-orange-500 rounded-full mt-2 mr-2 flex-shrink-0"></span>
                                 {achievement}

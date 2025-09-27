@@ -41,7 +41,7 @@ const Navigation = () => {
   // Determine the dynamic classes based on screen size and state
   const mobileClasses = isOpen
     ? "w-[90%] left-1/2 transform -translate-x-1/2 rounded-xl"
-    : " w-[90%] left-1/2 transform -translate-x-1/2 rounded-full";
+    : "w-[90%] left-1/2 transform -translate-x-1/2 rounded-full";
   const desktopClasses = `w-[50%] left-1/2 transform -translate-x-1/2 rounded-full`;
 
   const bgClasses = scrolled

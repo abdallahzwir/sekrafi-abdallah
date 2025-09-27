@@ -48,8 +48,8 @@ const HeroSection = () => {
                 <h3 className="text-lg sm:text-xl text-gray-600">Based in Tunisia.</h3>
               </div>
 
-              <p className="text-lg text-gray-600 max-w-2xl leading-relaxed">
-                With <span className="text-orange-500 font-bold">5+</span> years experience in{" "}
+              <p className="text-lg text-foreground max-w-2xl leading-relaxed">
+                With <span className="text-orange-500 font-bold">8+</span> years experience in{" "}
                 <span className="text-orange-500 font-bold">software development</span> and{" "}
                 <span className="text-orange-500 font-bold">17+</span> years in{" "}
                 <span className="text-orange-500 font-bold">IT</span> including{" "}
@@ -120,7 +120,7 @@ const HeroSection = () => {
               <div className="relative w-80 h-80 lg:w-96 lg:h-96">
                 
                 {/* Photo Container */}
-                <div className="relative w-full h-full rounded-full overflow-hidden  shadow-[0px_5px_15px_0px] shadow-orange-500 z-10">
+                <div className="relative w-full h-full rounded-full overflow-hidden  shadow-[0px_5px_15px_0px] shadow-orange-300 z-10">
                   <Image
                     src="/images/abdallah-photo-new.png"
                     alt="Sekrafi Abdallah - Full Stack Developer"
